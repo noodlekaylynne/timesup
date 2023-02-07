@@ -22,7 +22,7 @@ public class UltBar : MonoBehaviour
     void Update()
     {
         GetCurrentFill();
-        if (Input.GetKeyDown(KeyCode.Space)){
+        if (Input.GetKeyDown(KeyCode.Q)){
             StartCoroutine(drainBar());
         }
     }
@@ -42,8 +42,8 @@ public class UltBar : MonoBehaviour
             while (timeElapsed < time)
             {
                 timeElapsed += Time.deltaTime;
-                yield return new WaitForSeconds(time / 4);
-                current -= (25);
+                yield return new WaitForSeconds(time / 100);
+                current -= (1);
 
             }
         }

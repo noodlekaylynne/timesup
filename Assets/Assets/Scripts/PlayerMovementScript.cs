@@ -71,17 +71,23 @@ public class PlayerMovementScript : MonoBehaviour {
                 transform.localScale = new Vector3(-1f, 1f, 1f);
             }
         }
-        if(ultBar.current >= 100)
+        if (ultBar.current <= 100 && !ultSound.isPlaying)
         {
-            if (Input.GetKeyDown(KeyCode.Space)){
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
                 ultSound.Play();
                 music.Stop();
-            }
-            
-        }
-        
 
-       
+            }
+
+        }
+        if (ultBar.current == 0 && !music.isPlaying)
+        {
+            music.Play();
+            ultSound.Stop();
+
+        }
+
     }
 
 
