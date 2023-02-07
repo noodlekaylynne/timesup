@@ -30,12 +30,12 @@ public class helicopter : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
 
             {
                 StartCoroutine(PowerUpTimer());
-                print("space");
+                print("Slow Down!");
             }
 
 
