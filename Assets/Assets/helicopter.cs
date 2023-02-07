@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class helicopter : MonoBehaviour
 {
 
-    public float speed = 10.0f;
+    public float speed = 20;
     private Rigidbody2D rb;
     private Vector2 screenBounds;
     private float originalSpeed;
     private float time;
-
+    public UltBar Ultbar;
 
 
     // Use this for initialization
@@ -32,10 +32,9 @@ public class helicopter : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
-
             {
                 StartCoroutine(PowerUpTimer());
-                print("Slow Down!");
+                print("space");
             }
 
 

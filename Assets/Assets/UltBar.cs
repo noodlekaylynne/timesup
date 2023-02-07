@@ -12,6 +12,7 @@ public class UltBar : MonoBehaviour
     public int current;
     public Image mask;
     public float time = 8;
+    Coroutine lastRoutine = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +24,11 @@ public class UltBar : MonoBehaviour
     {
         GetCurrentFill();
         if (Input.GetKeyDown(KeyCode.Q)){
-            StartCoroutine(drainBar());
-        }
+            lastRoutine = StartCoroutine(drainBar());
+            
+            }
+        
+
     }
 
     void GetCurrentFill()
@@ -43,11 +47,20 @@ public class UltBar : MonoBehaviour
             {
                 timeElapsed += Time.deltaTime;
                 yield return new WaitForSeconds(time / 100);
-                current -= (1);
+                if (current > 0)
+                {
+                    current -= (1);
+                }
+                
+             else if (current == 0)
+                {
+                    StopCoroutine(lastRoutine);
+                }
 
             }
-        }
-       
-    }
+        
 
-}
+        }
+        }
+
+    }

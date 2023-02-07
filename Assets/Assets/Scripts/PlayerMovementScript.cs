@@ -71,7 +71,7 @@ public class PlayerMovementScript : MonoBehaviour {
                 transform.localScale = new Vector3(-1f, 1f, 1f);
             }
         }
-        if (ultBar.current <= 100 && !ultSound.isPlaying)
+        if (ultBar.current == 100 && !ultSound.isPlaying)
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
