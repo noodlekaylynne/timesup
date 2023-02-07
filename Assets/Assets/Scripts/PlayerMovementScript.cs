@@ -32,6 +32,7 @@ public class PlayerMovementScript : MonoBehaviour {
     public Transform particle;
     public AudioSource ultSound;
     public AudioSource music;
+    public AudioSource enemyHit;
 
     private void Start()
     {
@@ -113,6 +114,8 @@ public class PlayerMovementScript : MonoBehaviour {
         {
             
             healthBar.current -= 25;
+            enemyHit.Play();
+
         }
         if (collision.gameObject.CompareTag("Respawn"))
         {

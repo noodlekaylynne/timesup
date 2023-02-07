@@ -13,6 +13,8 @@ public class UltBar : MonoBehaviour
     public Image mask;
     public float time = 8;
     Coroutine lastRoutine = null;
+    public bool isUlt = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,9 @@ public class UltBar : MonoBehaviour
     {
         float timeElapsed = 0;
         if (current >= 100) {
+            {
+                isUlt = true;
+            }
             while (timeElapsed < time)
             {
                 timeElapsed += Time.deltaTime;
@@ -55,6 +60,7 @@ public class UltBar : MonoBehaviour
              else if (current == 0)
                 {
                     StopCoroutine(lastRoutine);
+                    isUlt = false;
                 }
 
             }

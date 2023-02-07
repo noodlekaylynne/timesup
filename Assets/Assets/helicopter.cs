@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class helicopter : MonoBehaviour
 {
 
-    public float speed = 20;
+    public float speed;
     private Rigidbody2D rb;
     private Vector2 screenBounds;
     private float originalSpeed;
@@ -34,7 +34,7 @@ public class helicopter : MonoBehaviour
         {
             {
                 StartCoroutine(PowerUpTimer());
-                print("space");
+                print("Slow Down Enemies");
             }
 
 
