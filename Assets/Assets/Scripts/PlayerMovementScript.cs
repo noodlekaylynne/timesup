@@ -1,7 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.EnhancedTouch;
 using UnityEngine.SceneManagement;
+using UnityEngine.Windows;
+using Input = UnityEngine.Input;
+using Touch = UnityEngine.Touch;
+
 public class PlayerMovementScript : MonoBehaviour {
 
     public float speed = 10f;
@@ -33,6 +38,7 @@ public class PlayerMovementScript : MonoBehaviour {
     public AudioSource ultSound;
     public AudioSource music;
     public AudioSource enemyHit;
+    public float touchTime = 0;
 
     private void Start()
     {
@@ -48,12 +54,39 @@ public class PlayerMovementScript : MonoBehaviour {
         
         if(isWin == false)
         {
-            mx = Input.GetAxis("Horizontal");
-            if (Input.GetButtonDown("Jump"))
+            mx = Input.GetAxisRaw("Horizontal");
+
+
+
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Stationary)
             {
-                Jump();
+
+                
+                
+                if (Input.touchCount > 0 && Input.GetTouch(0).position.x > Screen.width / 2 && Input.GetTouch(0).position.y < Screen.height / 2 )
+                {
+                    mx = 1;
+                    
+                }
+                if (Input.touchCount > 0 && Input.GetTouch(0).position.x < Screen.width / 2 && Input.GetTouch(0).position.y < Screen.height / 2 )
+                {
+                    mx = -1;
+
+                }
 
             }
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+            {
+                mx = 0;
+            }
+
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && Input.GetTouch(0).position.y > Screen.height / 2 || Input.GetButtonDown("Jump"))
+            {
+
+                Jump();
+               
+            }
+            
             CheckGrounded();
             if (Mathf.Abs(mx) > 0.05f)
             {
