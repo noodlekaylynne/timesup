@@ -19780,7 +19780,7 @@ MonoBehaviour:
     m_Bits: 64
   rb: {fileID: 1983855932}
   feet: {fileID: 807705694}
-  chrona: {fileID: 0}
+  chrona: {fileID: 1400287971}
   healthBar: {fileID: 2146706290}
   ultBar: {fileID: 1724367589}
   particle: {fileID: 258272864}
