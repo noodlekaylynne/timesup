@@ -27,12 +27,11 @@ public class Platform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) || Ultbar.buttonPress == true)
         {
             if (Ultbar.current >= 100)
             {
                 StartCoroutine(PowerUpTimer());
-                print("space");
             }
             
 

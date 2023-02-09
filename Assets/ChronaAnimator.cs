@@ -34,7 +34,7 @@ public class ChronaAnimator : MonoBehaviour
         Debug.Log("set anim");
         Debug.Log(a);
         Debug.Log(anim);
-        anim.state.SetAnimation(0, a, loop).TimeScale = 1f;
+        anim.state.SetAnimation(1, a, loop).TimeScale = 1f;
     }
     public void AddAnim(AnimationReferenceAsset a, bool loop)
     {

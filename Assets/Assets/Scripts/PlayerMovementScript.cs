@@ -23,6 +23,8 @@ public class PlayerMovementScript : MonoBehaviour {
 
     [SerializeField] Transform feet;
 
+    [SerializeField] ChronaAnimator chrona;
+
     int jumpCount = 0;
 
     bool isGrounded;
@@ -54,7 +56,14 @@ public class PlayerMovementScript : MonoBehaviour {
         
         if(isWin == false)
         {
-            mx = Input.GetAxisRaw("Horizontal");
+            if (Input.GetAxisRaw("Horizontal") != 0)
+            {
+                mx = Input.GetAxisRaw("Horizontal");
+            }
+            else if ((Input.GetAxisRaw("Horizontal") == 0) && Input.touchCount == 0)
+            {
+                mx = 0;
+            }
 
 
 
@@ -91,10 +100,12 @@ public class PlayerMovementScript : MonoBehaviour {
             if (Mathf.Abs(mx) > 0.05f)
             {
                 anim.SetBool("isRunning", true);
+                chrona.StartMoving();
             }
             else
             {
                 anim.SetBool("isRunning", false);
+                chrona.StopMoving();
             }
             if (mx > 0f)
             {
@@ -107,7 +118,7 @@ public class PlayerMovementScript : MonoBehaviour {
         }
         if (ultBar.current == 100 && !ultSound.isPlaying)
         {
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.Q) || ultBar.buttonPress == true)
             {
                 ultSound.Play();
                 music.Stop();

@@ -63,10 +63,37 @@
     <Compile Include="Assets/Assets/PowerUpScript.cs" />
     <Compile Include="Assets/Assets/Scripts/Platform_Follow.cs" />
     <Compile Include="Assets/Assets/deployAsteroids.cs" />
+    <Compile Include="Assets/ChronaAnimator.cs" />
     <Compile Include="Assets/Assets/HealthBar.cs" />
     <Compile Include="Assets/Assets/UltimateAbility.cs" />
     <Compile Include="Assets/Assets/UltBar.cs" />
     <Compile Include="Assets/Assets/Scripts/Platform.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
+    <None Include="Assets/Spine/version.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets/Spine/skeleton.atlas.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
+    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets/Assets/Spine/idle.atlas.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+    <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -881,6 +908,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="spine-csharp.csproj">
+      <Project>{06C3E224-3293-C755-2BA9-E201D63963EF}</Project>
+      <Name>spine-csharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity.csproj">
+      <Project>{29127A9E-8AA3-6C47-28E9-8C66E8FFA225}</Project>
+      <Name>spine-unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-editor.csproj">
+      <Project>{EB005D5E-174A-07D1-E62E-038662285341}</Project>
+      <Name>spine-unity-editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
