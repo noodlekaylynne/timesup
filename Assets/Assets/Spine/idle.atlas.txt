@@ -1,0 +1,77 @@
+idle.png
+size:1814,1962
+filter:Linear,Linear
+pma:true
+Clock-Hour
+bounds:2,2,26,32
+Clock-Minute
+bounds:455,2,39,34
+Eyes
+bounds:908,2,216,161
+Foot-Left
+bounds:1361,2,286,244
+Foot-Right
+bounds:2,394,288,232
+From Side/Crotch
+bounds:455,394,273,165
+From Side/Foot-Left-bent
+bounds:908,394,286,244
+From Side/Left calf
+bounds:1361,394,149,166
+From Side/Left foot
+bounds:2,786,270,192
+From Side/Left knee
+bounds:455,786,132,81
+From Side/Left thigh
+bounds:908,786,273,165
+From Side/Right calf
+bounds:1361,786,138,170
+From Side/Right foot
+bounds:2,1178,260,183
+From Side/Right knee
+bounds:455,1178,133,95
+From Side/Right thigh
+bounds:908,1178,273,165
+From Side/Torso
+bounds:1361,1178,316,376
+Hair-Back
+bounds:2,1570,451,361
+Hair-Front
+bounds:455,1570,441,390
+Hand-Left
+bounds:908,1570,122,99
+Hand-Right
+bounds:1361,1570,115,116
+
+idle_2.png
+size:1814,1570
+filter:Linear,Linear
+pma:true
+Head
+bounds:2,2,390,291
+Knee-Left
+bounds:455,2,174,118
+Knee-Right
+bounds:908,2,128,96
+Lower-Arm-Left
+bounds:1361,2,152,139
+Lower-Arm-Right
+bounds:2,394,129,130
+Lower-Leg-Left
+bounds:455,394,162,138
+Lower-Leg-Right
+bounds:908,394,178,132
+Mouth
+bounds:1361,394,115,93
+Neck
+bounds:2,786,139,116
+Pouch
+bounds:455,786,100,127
+Torso
+bounds:908,786,325,268
+Upper-Arm-Left
+bounds:1361,786,147,153
+Upper-Arm-Right
+bounds:2,1178,156,174
+Upper-Legs
+bounds:455,1178,346,178
