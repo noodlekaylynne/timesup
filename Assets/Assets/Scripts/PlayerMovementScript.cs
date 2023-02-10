@@ -56,7 +56,14 @@ public class PlayerMovementScript : MonoBehaviour {
         
         if(isWin == false)
         {
-            mx = Input.GetAxisRaw("Horizontal");
+            if (Input.GetAxisRaw("Horizontal") != 0)
+            {
+                mx = Input.GetAxisRaw("Horizontal");
+            }
+            else if ((Input.GetAxisRaw("Horizontal") == 0) && Input.touchCount == 0)
+            {
+                mx = 0;
+            }
 
 
 
@@ -111,7 +118,7 @@ public class PlayerMovementScript : MonoBehaviour {
         }
         if (ultBar.current == 100 && !ultSound.isPlaying)
         {
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.Q) || ultBar.buttonPress == true)
             {
                 ultSound.Play();
                 music.Stop();

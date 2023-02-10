@@ -14,6 +14,7 @@ public class UltBar : MonoBehaviour
     public float time = 8;
     Coroutine lastRoutine = null;
     public bool isUlt = false;
+    public bool buttonPress = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,14 +26,18 @@ public class UltBar : MonoBehaviour
     void Update()
     {
         GetCurrentFill();
-        if (Input.GetKeyDown(KeyCode.Q)){
+        if (Input.GetKeyDown(KeyCode.Q) || buttonPress == true){
             lastRoutine = StartCoroutine(drainBar());
-            
+            buttonPress = false;
             }
         
 
     }
+    public void UltButton()
+    {
+        buttonPress = true;
 
+    }
     void GetCurrentFill()
     {
         float currentOffset = current - minimum;
