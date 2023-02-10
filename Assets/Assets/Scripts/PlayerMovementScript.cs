@@ -41,6 +41,7 @@ public class PlayerMovementScript : MonoBehaviour {
     public AudioSource music;
     public AudioSource enemyHit;
     public float touchTime = 0;
+    public ChronaAnimator skincolor;
 
     private void Start()
     {
@@ -122,6 +123,7 @@ public class PlayerMovementScript : MonoBehaviour {
             {
                 ultSound.Play();
                 music.Stop();
+                skincolor.ToggleColour(false);
 
             }
 
@@ -130,6 +132,7 @@ public class PlayerMovementScript : MonoBehaviour {
         {
             music.Play();
             ultSound.Stop();
+            skincolor.ToggleColour(true);
 
         }
 
