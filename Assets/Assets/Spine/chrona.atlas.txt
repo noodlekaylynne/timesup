@@ -72,59 +72,63 @@ bounds:908,786,152,139
 Lower-Arm-Right
 bounds:1361,786,129,130
 Mouth
+bounds:908,1178,115,93
+Mouth-frown
 bounds:2,1178,115,93
+Mouth-open
+bounds:455,1178,115,93
 Neck
-bounds:455,1178,139,116
+bounds:1361,1178,139,116
 Pouch
-bounds:908,1178,100,127
+bounds:2,1570,100,127
 Purple/Foot-Left
-bounds:1361,1178,286,244
+bounds:455,1570,286,244
 Purple/Foot-Right
-bounds:2,1570,288,232
+bounds:908,1570,288,232
 Purple/Hair-Back
-bounds:455,1570,451,361
-Purple/Hair-Front
-bounds:908,1570,441,390
-Purple/Knee-Left
-bounds:1361,1570,174,118
+bounds:1361,1570,451,361
 
 chrona_3.png
 size:1814,1962
 filter:Linear,Linear
 pma:true
+Purple/Hair-Front
+bounds:2,2,441,390
+Purple/Knee-Left
+bounds:455,2,174,118
 Purple/Knee-Right
-bounds:2,2,128,96
+bounds:908,2,128,96
 Purple/Lower-Leg-Left
-bounds:455,2,162,138
+bounds:1361,2,162,138
 Purple/Lower-Leg-Right
-bounds:908,2,178,132
+bounds:2,394,178,132
 Purple/Side/Crotch
-bounds:1361,2,273,165
+bounds:455,394,273,165
 Purple/Side/Foot-Left-bent
-bounds:2,394,286,244
+bounds:908,394,286,244
 Purple/Side/Left calf
-bounds:455,394,149,166
+bounds:1361,394,149,166
 Purple/Side/Left foot
-bounds:908,394,270,192
+bounds:2,786,270,192
 Purple/Side/Left knee
-bounds:1361,394,132,81
+bounds:455,786,132,81
 Purple/Side/Left thigh
-bounds:2,786,273,165
+bounds:908,786,273,165
 Purple/Side/Right calf
-bounds:455,786,138,170
+bounds:1361,786,138,170
 Purple/Side/Right foot
-bounds:908,786,260,183
+bounds:2,1178,260,183
 Purple/Side/Right knee
-bounds:1361,786,133,95
+bounds:455,1178,133,95
 Purple/Side/Right thigh
-bounds:2,1178,273,165
+bounds:908,1178,273,165
 Purple/Side/Torso
-bounds:455,1178,316,376
+bounds:1361,1178,316,376
 Purple/Torso
-bounds:908,1178,325,268
+bounds:2,1570,325,268
 Purple/Upper-Arm-Left
-bounds:1361,1178,147,153
+bounds:455,1570,147,153
 Purple/Upper-Arm-Right
-bounds:2,1570,156,174
+bounds:908,1570,156,174
 Purple/Upper-Legs
-bounds:455,1570,346,178
+bounds:1361,1570,346,178
