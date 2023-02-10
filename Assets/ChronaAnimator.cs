@@ -6,18 +6,18 @@ using Spine.Unity;
 public class ChronaAnimator : MonoBehaviour
 {
     public SkeletonAnimation anim;
+    public SkeletonGraphic graphic;
     public AnimationReferenceAsset idle, clock, walkR;
     void Start() {}
     void Update() {}
 
+    private AnimationReferenceAsset currentAnim;
     public void StartMoving()
     {
-        Debug.Log("start moving!");
         PlayLooping(walkR);
     }
     public void StopMoving()
     {
-        Debug.Log("idle");
         PlayLooping(idle);
         AddAnim(clock, true);
     }
@@ -31,20 +31,19 @@ public class ChronaAnimator : MonoBehaviour
     }
     public void SetAnim(AnimationReferenceAsset a, bool loop)
     {
-        Debug.Log("set anim");
-        Debug.Log(a);
-        Debug.Log(anim);
-        anim.state.SetAnimation(0, a, loop).TimeScale = 1f;
+        if (a != currentAnim)
+        {
+            currentAnim = a;
+            anim.state.SetAnimation(0, a, loop).TimeScale = 1f;
+        }
     }
     public void AddAnim(AnimationReferenceAsset a, bool loop)
     {
         Spine.TrackEntry animEntry = anim.state.AddAnimation(1, a, loop, delay: 0f);
-        //animEntry.Complete += AnimationEntry_Complete;
     }
-    // This would change one skin for another after playing a non-looping blend
-    /*public void AnimationEntry_Complete(Spine.TrackEntry trackEntry)
+    public void ToggleColour(bool isGreen)
     {
-        anim.Skeleton.SetSkin("")
-    }*/
+        anim.Skeleton.SetSkin(isGreen ? "Green" : "Purple");
+    }
 
 }

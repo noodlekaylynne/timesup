@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
-  m_Name: idle_Atlas
+  m_Name: chrona_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 58a5d2ade8da0744a8b5d3c77bf1b9a7, type: 3}
+  atlasFile: {fileID: 4900000, guid: 209327dd478de2a4c9212ebb369481e3, type: 3}
   materials:
-  - {fileID: 2100000, guid: a189892b067988a4abc2352f5e0c49d9, type: 2}
-  - {fileID: 2100000, guid: b1b92bf6022386948bd8c67eef8c0ca4, type: 2}
+  - {fileID: 2100000, guid: 5a681db1946c81942b4774ce85ef4493, type: 2}
+  - {fileID: 2100000, guid: 75444f9363db55040bc796ef97d1dd71, type: 2}
+  - {fileID: 2100000, guid: c435dcc5902b0d34fa1ed766d1194247, type: 2}

@@ -23,6 +23,8 @@ public class PlayerMovementScript : MonoBehaviour {
 
     [SerializeField] Transform feet;
 
+    [SerializeField] ChronaAnimator chrona;
+
     int jumpCount = 0;
 
     bool isGrounded;
@@ -91,10 +93,12 @@ public class PlayerMovementScript : MonoBehaviour {
             if (Mathf.Abs(mx) > 0.05f)
             {
                 anim.SetBool("isRunning", true);
+                chrona.StartMoving();
             }
             else
             {
                 anim.SetBool("isRunning", false);
+                chrona.StopMoving();
             }
             if (mx > 0f)
             {

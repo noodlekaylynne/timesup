@@ -1,0 +1,130 @@
+chrona.png
+size:1814,1962
+filter:Linear,Linear
+pma:true
+Clock-Hour
+bounds:2,2,26,32
+Clock-Minute
+bounds:455,2,39,34
+Eyes
+bounds:908,2,216,161
+Green/Foot-Left
+bounds:1361,2,286,244
+Green/Foot-Right
+bounds:2,394,288,232
+Green/Hair-Back
+bounds:455,394,451,361
+Green/Hair-Front
+bounds:908,394,441,390
+Green/Knee-Left
+bounds:1361,394,174,118
+Green/Knee-Right
+bounds:2,786,128,96
+Green/Lower-Leg-Left
+bounds:455,786,162,138
+Green/Lower-Leg-Right
+bounds:908,786,178,132
+Green/Side/Crotch
+bounds:1361,786,273,165
+Green/Side/Foot-Left-bent
+bounds:2,1178,286,244
+Green/Side/Left calf
+bounds:455,1178,149,166
+Green/Side/Left foot
+bounds:908,1178,270,192
+Green/Side/Left knee
+bounds:1361,1178,132,81
+Green/Side/Left thigh
+bounds:2,1570,273,165
+Green/Side/Right calf
+bounds:455,1570,138,170
+Green/Side/Right foot
+bounds:908,1570,260,183
+Green/Side/Right knee
+bounds:1361,1570,133,95
+
+chrona_2.png
+size:1814,1962
+filter:Linear,Linear
+pma:true
+Green/Side/Right thigh
+bounds:2,2,273,165
+Green/Side/Torso
+bounds:455,2,316,376
+Green/Torso
+bounds:908,2,325,268
+Green/Upper-Arm-Left
+bounds:1361,2,147,153
+Green/Upper-Arm-Right
+bounds:2,394,156,174
+Green/Upper-Legs
+bounds:455,394,346,178
+Hand-Left
+bounds:908,394,122,99
+Hand-Right
+bounds:2,786,115,116
+Hand-Right-Side
+bounds:1361,394,115,116
+Head
+bounds:455,786,390,291
+Lower-Arm-Left
+bounds:908,786,152,139
+Lower-Arm-Right
+bounds:1361,786,129,130
+Mouth
+bounds:2,1178,115,93
+Neck
+bounds:455,1178,139,116
+Pouch
+bounds:908,1178,100,127
+Purple/Foot-Left
+bounds:1361,1178,286,244
+Purple/Foot-Right
+bounds:2,1570,288,232
+Purple/Hair-Back
+bounds:455,1570,451,361
+Purple/Hair-Front
+bounds:908,1570,441,390
+Purple/Knee-Left
+bounds:1361,1570,174,118
+
+chrona_3.png
+size:1814,1962
+filter:Linear,Linear
+pma:true
+Purple/Knee-Right
+bounds:2,2,128,96
+Purple/Lower-Leg-Left
+bounds:455,2,162,138
+Purple/Lower-Leg-Right
+bounds:908,2,178,132
+Purple/Side/Crotch
+bounds:1361,2,273,165
+Purple/Side/Foot-Left-bent
+bounds:2,394,286,244
+Purple/Side/Left calf
+bounds:455,394,149,166
+Purple/Side/Left foot
+bounds:908,394,270,192
+Purple/Side/Left knee
+bounds:1361,394,132,81
+Purple/Side/Left thigh
+bounds:2,786,273,165
+Purple/Side/Right calf
+bounds:455,786,138,170
+Purple/Side/Right foot
+bounds:908,786,260,183
+Purple/Side/Right knee
+bounds:1361,786,133,95
+Purple/Side/Right thigh
+bounds:2,1178,273,165
+Purple/Side/Torso
+bounds:455,1178,316,376
+Purple/Torso
+bounds:908,1178,325,268
+Purple/Upper-Arm-Left
+bounds:1361,1178,147,153
+Purple/Upper-Arm-Right
+bounds:2,1570,156,174
+Purple/Upper-Legs
+bounds:455,1570,346,178
