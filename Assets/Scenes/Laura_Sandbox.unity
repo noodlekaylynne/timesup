@@ -11258,6 +11258,7 @@ MonoBehaviour:
   mask: {fileID: 1864572850}
   time: 8
   isUlt: 0
+  buttonPress: 0
 --- !u!4 &1733233475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 183675959562627588, guid: ab2e4dd279b08024cb312f68daf2463b, type: 3}
@@ -12081,6 +12082,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: 75444f9363db55040bc796ef97d1dd71, type: 2}
   - {fileID: 2100000, guid: 5a681db1946c81942b4774ce85ef4493, type: 2}
   - {fileID: 2100000, guid: 75444f9363db55040bc796ef97d1dd71, type: 2}
+  - {fileID: 2100000, guid: 5a681db1946c81942b4774ce85ef4493, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12279,6 +12281,7 @@ MonoBehaviour:
   music: {fileID: 519420036}
   enemyHit: {fileID: 0}
   touchTime: 0
+  skincolor: {fileID: 0}
 --- !u!95 &1983855937
 Animator:
   serializedVersion: 4
